@@ -28,7 +28,7 @@ class Inneed_people(models.Model):
     money_stat = models.IntegerField()
 
 
-class Users_Inneed_People(models.Model):
+class Users_Inneed_people(models.Model):
     user_id = models.ForeignKey(Users, on_delete = models.CASCADE)
     Inneed_people_id = models.ForeignKey(Inneed_people, on_delete = models.CASCADE)
     date = models.DateField()

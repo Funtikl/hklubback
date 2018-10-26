@@ -1,6 +1,6 @@
 from django.contrib.auth.models import User, Group
 from rest_framework import viewsets
-from hklubback.backend.serializers import UserSerializer, GroupSerializer
+from hklubback.backend.serializers import UserSerializer, InneedPeopleSerializer
 
 
 class UserViewSet(viewsets.ModelViewSet):
@@ -11,9 +11,9 @@ class UserViewSet(viewsets.ModelViewSet):
     serializer_class = UserSerializer
 
 
-class GroupViewSet(viewsets.ModelViewSet):
+class InneedPeopleViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows groups to be viewed or edited.
     """
-    queryset = Group.objects.all()
-    serializer_class = GroupSerializer
+    queryset = Inneed_people.objects.all()
+    serializer_class = InneedPeopleSerializer

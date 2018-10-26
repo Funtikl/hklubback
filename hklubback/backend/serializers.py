@@ -15,7 +15,7 @@ class InnerPeopleSerializer(serializers.HyperlinkedModelSerializer):
 
 class UsersInneedPeopleSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = User_Inned_People
+        model = User_Inned_people
         fields = ('user_id', 'Inneed_people_id', 'date')
 
 class PostAzSerializer(serializers.HyperlinkedModelSerializer):
