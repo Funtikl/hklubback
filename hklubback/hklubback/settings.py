@@ -58,7 +58,7 @@ SECURITY_MIDDLEWARE = [
 # This is required to go first! See: https://github.com/ottoyiu/django-cors-headers#setup
 
 
-DJANGO_MIDDLEWARE = [
+MIDDLEWARE = [
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',

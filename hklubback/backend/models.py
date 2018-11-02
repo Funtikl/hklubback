@@ -7,11 +7,10 @@ class Users(models.Model):
     firstname = models.CharField(max_length=50)
     lastname = models.CharField(max_length=50)
     email = models.CharField(max_length=100)
-    group_id = models.IntegerField()
+    group_id = models.IntegerField(default='0000000', editable=False)
 
 
-    def __str__(self):
-        return self.firstname
+    
         
 
 class Inneed_people(models.Model):
