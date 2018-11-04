@@ -46,6 +46,7 @@ class Posts_az(models.Model):
 # class Categories(models.Model):
 #     cat_ids = models.ForeignKey(Inneed_people, on_delete = models.CASCADE)
 #     names = models.ForeignKey(Inneed_people, on_delete = models.CASCADE)
+# When I uncomment this - app shows an error. I will try it in another way.
 
 
 
